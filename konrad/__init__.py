@@ -11,6 +11,9 @@ import os
 
 from konrad.abbreviation import ABBREVIATION
 from konrad.abbreviation import ABBREVIATION_LOWER
+from konrad.sign import DOTS
+from konrad.sign import HYPHEN_HALF
+from konrad.sign import HYPHEN_QUARTER
 from konrad.sign import SIGN
 
 __version__ = '0.1.0'

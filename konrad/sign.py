@@ -13,3 +13,8 @@ SIGN = {
     ':',
     '?',
 }
+
+HYPHEN_QUARTER = '-'
+HYPHEN_HALF = '–'
+
+DOTS = '…'
