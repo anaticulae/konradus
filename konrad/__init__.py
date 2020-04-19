@@ -13,6 +13,6 @@ from konrad.abbreviation import ABBREVIATION
 from konrad.abbreviation import ABBREVIATION_LOWER
 from konrad.sign import SIGN
 
-__version__ = '0.0.0'
+__version__ = '0.1.0'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
