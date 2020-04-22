@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.1.1
+
+### Feature
+
+* move HYPHEN and DOTS (239ef513271a)
+
 ## v0.1.0
 
 ### Feature
