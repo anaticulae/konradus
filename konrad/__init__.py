@@ -6,6 +6,20 @@
 # use or distribution is an offensive act against international law and may
 # be prosecuted under federal law. Its content is company confidential.
 #==============================================================================
+"""Konrad DUDEN
+============
+
+The central approach of this package is store information which are
+located in DUDEN and are basic rules for the german language
+
+Difference to `german`
+----------------------
+
+The `german` package is a wrapper for external tooling which have some
+`magic` inside to determine the type of a word or split a sentence in
+valid chunks.
+
+"""
 
 import os
 
