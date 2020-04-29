@@ -25,6 +25,10 @@ import os
 
 from konrad.abbreviation import ABBREVIATION
 from konrad.abbreviation import ABBREVIATION_LOWER
+from konrad.lang import Language
+from konrad.mark import Mark
+from konrad.mark import Marks
+from konrad.mark import matches
 from konrad.sign import DOTS
 from konrad.sign import HYPHEN_HALF
 from konrad.sign import HYPHEN_QUARTER
