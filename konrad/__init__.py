@@ -34,6 +34,6 @@ from konrad.sign import HYPHEN_HALF
 from konrad.sign import HYPHEN_QUARTER
 from konrad.sign import SIGN
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

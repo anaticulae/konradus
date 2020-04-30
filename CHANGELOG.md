@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.1
+
+### Fix
+
+* add missing package definition (b71955b83879)
+
 ## v0.2.0
 
 ### Feature
