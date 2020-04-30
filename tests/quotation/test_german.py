@@ -7,7 +7,9 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import konrad.quotation.german as german
+import german
+
+import konrad.quotation.german as german_quotes
 from konrad.mark import Mark
 
 DOUBLE_QUOTE = [
@@ -18,8 +20,45 @@ DOUBLE_QUOTE = [
 
 
 def test_double_quotation_closed():
-    assert german.double_quotation_closed(DOUBLE_QUOTE)
+    assert german_quotes.double_quotation_closed(DOUBLE_QUOTE)
 
 
 def test_no_double_quotation_inside_double():
-    assert german.no_double_quotes_inside_double(DOUBLE_QUOTE)
+    assert german_quotes.no_double_quotes_inside_double(DOUBLE_QUOTE)
+
+
+STANDARD = """„Protest“, so schreibt Sigrid Baringhorst, „ist
+kommunikatives Handeln“ (1998: 327). Will man das Phänomen ‚Protest‘
+angemessen erfassen, so gilt es zu untersuchen, wie er kommuniziert
+wird."""
+
+
+def test_german_double_quote():
+    first = german.split_words(german.split_sentences(STANDARD)[0])
+    assert german_quotes.double_quotation_closed(first)
+    assert german_quotes.no_double_quotes_inside_double(first)
+
+
+REQUIRE_SINGLE_INSIDE = """\
+Bevor die Konzepte der Privatheit und Öffentlichkeit
+systemtheoretisch näher betrachtet werden, soll vorab kurz umrissen
+werden, was darunter verstanden wird. Rössler beschreibt etwas
+Privates folgendermaßen: „‚privat‘ nennen wir einerseits Handlungs-
+und Verhaltensweisen, zum Zweiten ein bestimmtes Wissen und drittens
+Räume“ und weiter: „als privat gilt etwas dann, wenn man selbst
+den Zugang zu diesem „etwas“ kontrollieren kann“. Privatheit
+beinhaltet also den Aspekt der Zugangskontrolle seitens des
+Individuums.
+"""
+
+
+def test_german_double_quote_inside_double():
+    splitted = german.split_sentences(REQUIRE_SINGLE_INSIDE)
+    assert len(splitted) == 5
+
+    third = german.split_words(splitted[2])
+    assert german_quotes.no_double_quotes_inside_double(third)
+
+    fourth = german.split_words(splitted[3])
+    double_inside_double = german_quotes.no_double_quotes_inside_double(fourth)
+    assert double_inside_double is False
