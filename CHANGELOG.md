@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.2
+
+### Feature
+
+* add language constants to public API (f05a6e30250e)
+
 ## v0.2.1
 
 ### Fix
