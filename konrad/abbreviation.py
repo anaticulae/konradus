@@ -27,7 +27,7 @@ ABBREVIATION = {
     'al.': '',
     'bzw.': 'beziehungsweise',
     'ca.': 'circa',
-    'et. al.': '',
+    'et. al.': 'et alii',  # TODO: CHECK DOTS
     'et.': '',
     'etc.': 'et cetera',
     'evtl.': 'eventuell',
@@ -44,6 +44,8 @@ ABBREVIATION = {
     'usw.': 'und so weiter',
     'vgl.': 'vergleiche',
     'z.B.': 'zum Beispiel',
+    'z. B.': 'zum Beispiel',
+    'vs.': 'versus',
 }
 
 ABBREVIATION_LOWER = {item.lower() for item in ABBREVIATION}
