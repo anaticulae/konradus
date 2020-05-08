@@ -83,3 +83,9 @@ def matches(token: str, lang=None) -> Mark:
     # TODO: MAKE MATCH LANG DEPEDEND
     lang = Language.GERMAN if lang is None else lang
     return MATCH[token]
+
+
+def remove_marks(items: list) -> list:
+    assert isinstance(items, list), type(items)
+    result = [item for item in items if isinstance(item, str)]
+    return result
