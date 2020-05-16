@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.2.4
+
+### Feature
+
+* add method to remove marks out of token list (9a16581eda9a)
+* extend abbreviation table (3af519d51389)
+
 ## v0.2.3
 
 ## v0.2.2
