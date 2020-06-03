@@ -10,7 +10,7 @@
 import enum
 import typing
 
-from konrad.lang import Language
+import konrad.lang
 
 
 class Mark(enum.Enum):
@@ -81,7 +81,7 @@ def matches(token: str, lang=None) -> Mark:
     <Mark.COLON: 3>
     """
     # TODO: MAKE MATCH LANG DEPEDEND
-    lang = Language.GERMAN if lang is None else lang
+    lang = konrad.lang.Language.GERMAN if lang is None else lang
     return MATCH[token]
 
 
