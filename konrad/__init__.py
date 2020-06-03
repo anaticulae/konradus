@@ -28,6 +28,7 @@ from konrad.abbreviation import ABBREVIATION_LOWER
 from konrad.lang import Language
 from konrad.mark import Mark
 from konrad.mark import Marks
+from konrad.mark import mark2str
 from konrad.mark import matches
 from konrad.mark import remove_marks
 from konrad.sign import DOTS

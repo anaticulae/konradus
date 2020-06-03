@@ -7,6 +7,7 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
+import contextlib
 import enum
 import typing
 
@@ -89,3 +90,18 @@ def remove_marks(items: list) -> list:
     assert isinstance(items, list), type(items)
     result = [item for item in items if isinstance(item, str)]
     return result
+
+
+REVERSED = {value: key for key, value in MATCH.items()}
+
+
+def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
+    """\
+    >>> mark2str(konrad.Mark.COMMA)
+    ','
+    >>> mark2str('Helm')
+    'Helm'
+    """
+    with contextlib.suppress(KeyError):
+        item = REVERSED[item]
+    return item
