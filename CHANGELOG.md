@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.16
+
+### Feature
+
+* add method to convert mark to string (9ec340df800f)
+
 ## v0.2.15
 
 ## v0.2.14
