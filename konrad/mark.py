@@ -29,6 +29,7 @@ class Mark(enum.Enum):
     QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
     HYPHEN = enum.auto()  # - short dash
     DASH = enum.auto()  # -
+    DOT = enum.auto()  # . in Fig. or Abb. - but not a FULLSTOP
     DOTS = enum.auto()  # ...
     BRACKET = enum.auto()  # ()
     BRACKET_OPEN = enum.auto()  # (
