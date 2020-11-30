@@ -14,17 +14,20 @@ ABBREVIATION = {
     'Co.': '???',
     'Diss.': 'Dissertation',
     'Dok.': 'Dokument',  # ?
+    'Fig.': 'Figure',
     'Forts.': 'Fortsetzung',
-    'Hrsg.': 'Herausgeber',
     'H.': 'Heft',
+    'Hrsg.': 'Herausgeber',
     'Jg.': 'Jahrgang',
     'S.': 'Seite',
     'Sp.': 'Spalte',
+    'Tab.': 'Tabelle',
     'Verf.': 'Verfasser',
     'Verl.': 'Verlag',
     'Vol.': 'Volume',
     'a.a.O.': 'am angeführten Ort',
     'al.': '',
+    'bspw.': 'beispielsweise',
     'bzw.': 'beziehungsweise',
     'ca.': 'circa',
     'et. al.': 'et alii',  # TODO: CHECK DOTS
@@ -35,7 +38,7 @@ ABBREVIATION = {
     'ff.': '',
     'ggf.': 'gegebenenfalls',
     'lat.': 'latein',
-    'mind.': '',
+    'mind.': 'mindestens',
     'o.J.': 'ohne Jahrgangsangabe',
     'o.V.': 'ohne Verfasser',
     'o.Ä': 'ohne Änderung?',
@@ -43,9 +46,9 @@ ABBREVIATION = {
     'u.a.': 'unter anderem',
     'usw.': 'und so weiter',
     'vgl.': 'vergleiche',
-    'z.B.': 'zum Beispiel',
-    'z. B.': 'zum Beispiel',
     'vs.': 'versus',
+    'z. B.': 'zum Beispiel',
+    'z.B.': 'zum Beispiel',
 }
 
 ABBREVIATION_LOWER = {item.lower() for item in ABBREVIATION}
