@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.3.0
+
+### Feature
+
+* extend abbreviation list (1664c870e1f3)
+* add DOT type (f8ce15bbde07)
+
 ## v0.2.24
 
 ## v0.2.23
