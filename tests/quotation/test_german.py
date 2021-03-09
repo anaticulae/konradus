@@ -54,11 +54,15 @@ Individuums.
 
 def test_german_double_quote_inside_double():
     splitted = german.split_sentences(REQUIRE_SINGLE_INSIDE)
-    assert len(splitted) == 5
+    assert len(splitted) == 3
 
-    third = german.split_words(splitted[2])
-    assert german_quotes.no_double_quotes_inside_double(third)
+    first, second, third = splitted
 
-    fourth = german.split_words(splitted[3])
-    double_inside_double = german_quotes.no_double_quotes_inside_double(fourth)
-    assert double_inside_double is False
+    second_start, second_middle, second_end = second.split(':')
+    second_start = f'{second_start}:'
+
+    no_double = german.split_words(second_start)
+    assert german_quotes.no_double_quotes_inside_double(no_double)
+
+    double_inside = german.split_words(second_end)
+    assert not german_quotes.no_double_quotes_inside_double(double_inside)
