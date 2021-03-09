@@ -34,7 +34,7 @@ wird."""
 
 
 def test_german_double_quote():
-    first = german.split_words(german.split_sentences(STANDARD)[0])
+    first = german.word_tokenize(german.sentence_tokenize(STANDARD)[0])
     assert german_quotes.double_quotation_closed(first)
     assert german_quotes.no_double_quotes_inside_double(first)
 
@@ -53,7 +53,7 @@ Individuums.
 
 
 def test_german_double_quote_inside_double():
-    splitted = german.split_sentences(REQUIRE_SINGLE_INSIDE)
+    splitted = german.sentence_tokenize(REQUIRE_SINGLE_INSIDE)
     assert len(splitted) == 3
 
     first, second, third = splitted
@@ -61,8 +61,8 @@ def test_german_double_quote_inside_double():
     second_start, second_middle, second_end = second.split(':')
     second_start = f'{second_start}:'
 
-    no_double = german.split_words(second_start)
+    no_double = german.word_tokenize(second_start)
     assert german_quotes.no_double_quotes_inside_double(no_double)
 
-    double_inside = german.split_words(second_end)
+    double_inside = german.word_tokenize(second_end)
     assert not german_quotes.no_double_quotes_inside_double(double_inside)
