@@ -6,6 +6,19 @@
 # use or distribution is an offensive act against international law and may
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
+"""Abbreviation
+============
+
+Collection of common valid DUDEN abbreviations.
+
+>>> assert 'u.a.' in ABBREVIATION_LOWER
+
+Ensure that abbreviations with/ and without spaces are available.
+
+>>> assert 'a. a. o.' in ABBREVIATION_LOWER
+
+>>> assert ABBREVIATION['a.a.O.'] == ABBREVIATION['a. a. O.']
+"""
 
 ABBREVIATION = {
     'Abb.': 'Abbildung',
@@ -47,8 +60,12 @@ ABBREVIATION = {
     'usw.': 'und so weiter',
     'vgl.': 'vergleiche',
     'vs.': 'versus',
-    'z. B.': 'zum Beispiel',
     'z.B.': 'zum Beispiel',
 }
+
+for key, value in list(ABBREVIATION.items()):
+    # insert spaces into abbreviation keys
+    key = '. '.join(key.split('.')).strip()
+    ABBREVIATION[key] = value
 
 ABBREVIATION_LOWER = {item.lower() for item in ABBREVIATION}
