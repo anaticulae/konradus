@@ -2,6 +2,16 @@
 
 Every noteable change is logged here.
 
+## v0.4.0
+
+### Feature
+
+* enable spaces inside abbreviation keys (80762387ecf1)
+
+### Fix
+
+* add missing dot (5325f7de1b8e)
+
 ## v0.3.1
 
 ### Fix
