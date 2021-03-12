@@ -41,7 +41,7 @@ ABBREVIATION = {
     'mind.': 'mindestens',
     'o.J.': 'ohne Jahrgangsangabe',
     'o.V.': 'ohne Verfasser',
-    'o.Ä': 'ohne Änderung?',
+    'o.Ä.': 'ohne Änderung?',
     's.': 'siehe',
     'u.a.': 'unter anderem',
     'usw.': 'und so weiter',
