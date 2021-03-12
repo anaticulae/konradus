@@ -56,9 +56,9 @@ def test_german_double_quote_inside_double():
     splitted = german.sentence_tokenize(REQUIRE_SINGLE_INSIDE)
     assert len(splitted) == 3
 
-    first, second, third = splitted
+    first, second, third = splitted  # pylint:disable=W0612
 
-    second_start, second_middle, second_end = second.split(':')
+    second_start, second_middle, second_end = second.split(':')  # pylint:disable=W0612
     second_start = f'{second_start}:'
 
     no_double = german.word_tokenize(second_start)
