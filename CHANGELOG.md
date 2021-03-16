@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.4.1
+
+### Feature
+
+* add Enum to str converter (ac6d3a930f77)
+
 ## v0.4.0
 
 ### Feature
