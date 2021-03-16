@@ -45,6 +45,13 @@ class Mark(enum.Enum):
         """Convert str to `Mark`."""
         return MATCH[item]
 
+    def __str__(self):
+        """\
+        >>> str(Mark.DASH)
+        '–'
+        """
+        return mark2str(self)
+
 
 Marks = typing.List[Mark]
 
