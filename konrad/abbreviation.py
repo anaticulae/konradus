@@ -65,7 +65,7 @@ ABBREVIATION = {
 
 for key, value in list(ABBREVIATION.items()):
     # insert spaces into abbreviation keys
-    key = '. '.join(key.split('.')).strip()
+    key = '. '.join(key.split('.')).strip()  # pylint:disable=C0103
     ABBREVIATION[key] = value
 
 ABBREVIATION_LOWER = {item.lower() for item in ABBREVIATION}
