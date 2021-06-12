@@ -11,7 +11,8 @@ import contextlib
 import enum
 import typing
 
-import konrad.lang
+# required for doc test
+import konrad.lang  # pylint:disable=W0611
 
 
 class Mark(enum.Enum):
@@ -27,6 +28,10 @@ class Mark(enum.Enum):
     QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
     QUOTATION_MARK_SINGLE_OPEN = enum.auto()
     QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
+    EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
+    EN_QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
+    EN_QUOTATION_MARK_SINGLE_OPEN = enum.auto()
+    EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
     HYPHEN = enum.auto()  # - short dash
     DASH = enum.auto()  # -
     DOT = enum.auto()  # . in Fig. or Abb. - but not a FULLSTOP
@@ -41,16 +46,22 @@ class Mark(enum.Enum):
     QUOTATION_MARK_SINGLE = enum.auto()  # '' ""
 
     @classmethod
-    def fromstr(cls, item: str):
+    def fromstr(cls, item: str, lang: str = None):
         """Convert str to `Mark`."""
+        if lang == 'eng':
+            with contextlib.suppress(KeyError):
+                return MATCH_ENG[item]
         return MATCH[item]
 
     def __str__(self):
         """\
         >>> str(Mark.DASH)
         '–'
+        >>> str(Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE)
+        '”'
         """
-        return mark2str(self)
+        lang = 'eng' if str(self.name).startswith('EN_') else None
+        return mark2str(self, lang=lang)
 
 
 Marks = typing.List[Mark]
@@ -66,7 +77,7 @@ MATCH = {
     '"': Mark.QUOTATION_MARK,
     "'": Mark.QUOTATION_MARK_SINGLE,
     "„": Mark.QUOTATION_MARK_DOUBLE_OPEN,
-    '“': Mark.QUOTATION_MARK_DOUBLE_CLOSE,  # english open
+    '“': Mark.QUOTATION_MARK_DOUBLE_CLOSE,
     '”': Mark.QUOTATION_MARK_DOUBLE_CLOSE,
     '‚': Mark.QUOTATION_MARK_SINGLE_OPEN,
     '‘': Mark.QUOTATION_MARK_SINGLE_CLOSE,
@@ -80,6 +91,12 @@ MATCH = {
     '[': Mark.SQUARE_BRACKET_OPEN,
     ']': Mark.SQUARE_BRACKET_CLOSE,
 }
+MATCH_ENG = {
+    '“': Mark.EN_QUOTATION_MARK_DOUBLE_OPEN,
+    '”': Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE,
+    '‘': Mark.EN_QUOTATION_MARK_SINGLE_OPEN,
+    "’": Mark.EN_QUOTATION_MARK_SINGLE_CLOSE,
+}
 
 
 def matches(token: str, lang=None) -> Mark:
@@ -88,9 +105,12 @@ def matches(token: str, lang=None) -> Mark:
 
     >>> matches(':')
     <Mark.COLON: 3>
+    >>> matches('”', lang='eng')
+    <Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE:...>
     """
-    # TODO: MAKE MATCH LANG DEPEDEND
-    lang = konrad.lang.Language.GERMAN if lang is None else lang
+    if lang == 'eng':
+        with contextlib.suppress(KeyError):
+            return MATCH_ENG[token]
     return MATCH[token]
 
 
@@ -101,6 +121,7 @@ def remove_marks(items: list) -> list:
 
 
 REVERSED = {value: key for key, value in MATCH.items()}
+REVERSED_ENG = {value: key for key, value in MATCH_ENG.items()}
 
 
 def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
@@ -109,7 +130,12 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     ','
     >>> mark2str('Helm')
     'Helm'
+    >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang='eng')
+    '“'
     """
+    if lang == 'eng':
+        with contextlib.suppress(KeyError):
+            return REVERSED_ENG[item]
     with contextlib.suppress(KeyError):
-        item = REVERSED[item]
+        return REVERSED[item]
     return item
