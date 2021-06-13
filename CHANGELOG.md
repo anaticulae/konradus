@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.5.1
+
+### Fix
+
+* replace with language enum (b33feb6aa04a)
+
 ## v0.5.0
 
 ### Feature
