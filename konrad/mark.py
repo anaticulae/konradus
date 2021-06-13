@@ -11,8 +11,7 @@ import contextlib
 import enum
 import typing
 
-# required for doc test
-import konrad.lang  # pylint:disable=W0611
+import konrad
 
 
 class Mark(enum.Enum):
@@ -48,7 +47,8 @@ class Mark(enum.Enum):
     @classmethod
     def fromstr(cls, item: str, lang: str = None):
         """Convert str to `Mark`."""
-        if lang == 'eng':
+
+        if lang == konrad.ENGLISH:
             with contextlib.suppress(KeyError):
                 return MATCH_ENG[item]
         return MATCH[item]
@@ -60,7 +60,7 @@ class Mark(enum.Enum):
         >>> str(Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE)
         '”'
         """
-        lang = 'eng' if str(self.name).startswith('EN_') else None
+        lang = konrad.ENGLISH if str(self.name).startswith('EN_') else None
         return mark2str(self, lang=lang)
 
 
@@ -100,15 +100,16 @@ MATCH_ENG = {
 
 
 def matches(token: str, lang=None) -> Mark:
-    """Convert `token` to `Mark` depending on `lang`. If `lang` is None
-    use Language.GERMAN.
+    """Convert `token` to `Mark` depending on `lang`.
+
+    If `lang` is None, use Language.GERMAN.
 
     >>> matches(':')
     <Mark.COLON: 3>
-    >>> matches('”', lang='eng')
+    >>> matches('”', lang=konrad.ENGLISH)
     <Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE:...>
     """
-    if lang == 'eng':
+    if lang == konrad.ENGLISH:
         with contextlib.suppress(KeyError):
             return MATCH_ENG[token]
     return MATCH[token]
@@ -130,10 +131,10 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     ','
     >>> mark2str('Helm')
     'Helm'
-    >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang='eng')
+    >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang=konrad.ENGLISH)
     '“'
     """
-    if lang == 'eng':
+    if lang == konrad.ENGLISH:
         with contextlib.suppress(KeyError):
             return REVERSED_ENG[item]
     with contextlib.suppress(KeyError):
