@@ -2,6 +2,15 @@
 
 Every noteable change is logged here.
 
+## v0.6.0
+
+### Feature
+
+* add slash and backslash (ba45b344f38e)
+* add method to convert Language to str (e87d634c1679)
+* add method to check English language (f23f24591305)
+* if not matches return content (4016c48440bd)
+
 ## v0.5.1
 
 ### Fix
