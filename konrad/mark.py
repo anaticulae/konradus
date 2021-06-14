@@ -26,6 +26,7 @@ class Mark(enum.Enum):
     DASH = enum.auto()  # -
     DOT = enum.auto()  # . in Fig. or Abb. - but not a FULLSTOP
     DOTS = enum.auto()  # ...
+    ELLIPSIS = enum.auto()  # '…'
     EN_QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
     EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
     EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
@@ -71,6 +72,7 @@ MATCH = {
     '?': Mark.QUESTION_MARK,
     '!': Mark.EXCLAMATION_MARK,
     "&": Mark.AND,
+    '…': Mark.ELLIPSIS,
     '"': Mark.QUOTATION_MARK,
     "'": Mark.QUOTATION_MARK_SINGLE,
     "„": Mark.QUOTATION_MARK_DOUBLE_OPEN,
