@@ -18,15 +18,27 @@ class Language(enum.Enum):
 
 
 LANGUAGE = {
-    Language.GERMAN: 'ger',
-    Language.ENGLISH: 'eng',
-    Language.FRENCH: 'fre',
-    Language.UNKNOWN: 'none',
+    Language.GERMAN: 'ger german'.split(),
+    Language.ENGLISH: 'eng english'.split(),
+    Language.FRENCH: 'fre french'.split(),
+    Language.UNKNOWN: 'none unknown'.split(),
 }
 
 
-def simplelang(lang: Language):
-    return LANGUAGE[lang]
+def simplelang(lang: Language) -> str:
+    if isinstance(lang, str):
+        return lang
+    return LANGUAGE[lang][0]
+
+
+def complexlang(lang: Language) -> str:
+    """\
+    >>> complexlang(Language.FRENCH)
+    'french'
+    """
+    if isinstance(lang, str):
+        return lang
+    return LANGUAGE[lang][1]
 
 
 ENGLISH = {'eng', 'english', Language.ENGLISH}
