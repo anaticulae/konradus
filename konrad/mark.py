@@ -20,7 +20,11 @@ class Mark(enum.Enum):
     BACKSLASH = enum.auto()  # \
     BRACKET = enum.auto()  # ()
     BRACKET_CLOSE = enum.auto()  # )
+    BRACKET_ELEPHANT_CLOSE = enum.auto()  # }
+    BRACKET_ELEPHANT_OPEN = enum.auto()  # {
+    BRACKET_GREATHER = enum.auto()  # >
     BRACKET_OPEN = enum.auto()  # (
+    BRACKET_SMALLER = enum.auto()  # <
     COLON = enum.auto()  # :
     COMMA = enum.auto()  # ,
     DASH = enum.auto()  # -
@@ -31,14 +35,14 @@ class Mark(enum.Enum):
     EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
     EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
     EN_QUOTATION_MARK_SINGLE_OPEN = enum.auto()
-    QUOTATION_GUILLEMENTS_DOUBLE_OPEN = enum.auto()  # »
-    QUOTATION_GUILLEMENTS_DOUBLE_CLOSE = enum.auto()  # «
-    QUOTATION_GUILLEMENTS_SINGLE_OPEN = enum.auto()  # ›
-    QUOTATION_GUILLEMENTS_SINGLE_CLOSE = enum.auto()  # ‹
     EXCLAMATION_MARK = enum.auto()  # !
     FULLSTOP = enum.auto()  # .
     HYPHEN = enum.auto()  # - short dash
     QUESTION_MARK = enum.auto()  #?
+    QUOTATION_GUILLEMENTS_DOUBLE_CLOSE = enum.auto()  # «
+    QUOTATION_GUILLEMENTS_DOUBLE_OPEN = enum.auto()  # »
+    QUOTATION_GUILLEMENTS_SINGLE_CLOSE = enum.auto()  # ‹
+    QUOTATION_GUILLEMENTS_SINGLE_OPEN = enum.auto()  # ›
     QUOTATION_MARK = enum.auto()  # '' ""
     QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
     QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
@@ -84,11 +88,15 @@ MATCH = {
     '«': Mark.QUOTATION_GUILLEMENTS_DOUBLE_CLOSE,
     '›': Mark.QUOTATION_GUILLEMENTS_SINGLE_OPEN,
     '‹': Mark.QUOTATION_GUILLEMENTS_SINGLE_CLOSE,
+    '>': Mark.BRACKET_GREATHER,
+    '<': Mark.BRACKET_SMALLER,
     "’": Mark.APOSTROPHE,
     '-': Mark.HYPHEN,
     '–': Mark.DASH,
     '...': Mark.DOTS,
     '()': Mark.BRACKET,
+    '{': Mark.BRACKET_ELEPHANT_OPEN,
+    '}': Mark.BRACKET_ELEPHANT_CLOSE,
     '(': Mark.BRACKET_OPEN,
     ')': Mark.BRACKET_CLOSE,
     '[': Mark.SQUARE_BRACKET_OPEN,
