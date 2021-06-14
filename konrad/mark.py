@@ -30,6 +30,10 @@ class Mark(enum.Enum):
     EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
     EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
     EN_QUOTATION_MARK_SINGLE_OPEN = enum.auto()
+    QUOTATION_GUILLEMENTS_DOUBLE_OPEN = enum.auto()  # »
+    QUOTATION_GUILLEMENTS_DOUBLE_CLOSE = enum.auto()  # «
+    QUOTATION_GUILLEMENTS_SINGLE_OPEN = enum.auto()  # ›
+    QUOTATION_GUILLEMENTS_SINGLE_CLOSE = enum.auto()  # ‹
     EXCLAMATION_MARK = enum.auto()  # !
     FULLSTOP = enum.auto()  # .
     HYPHEN = enum.auto()  # - short dash
@@ -74,6 +78,10 @@ MATCH = {
     '”': Mark.QUOTATION_MARK_DOUBLE_CLOSE,
     '‚': Mark.QUOTATION_MARK_SINGLE_OPEN,
     '‘': Mark.QUOTATION_MARK_SINGLE_CLOSE,
+    '»': Mark.QUOTATION_GUILLEMENTS_DOUBLE_OPEN,
+    '«': Mark.QUOTATION_GUILLEMENTS_DOUBLE_CLOSE,
+    '›': Mark.QUOTATION_GUILLEMENTS_SINGLE_OPEN,
+    '‹': Mark.QUOTATION_GUILLEMENTS_SINGLE_CLOSE,
     "’": Mark.APOSTROPHE,
     '-': Mark.HYPHEN,
     '–': Mark.DASH,
