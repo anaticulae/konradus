@@ -17,6 +17,18 @@ class Language(enum.Enum):
     UNKNOWN = enum.auto()
 
 
+LANGUAGE = {
+    Language.GERMAN: 'ger',
+    Language.ENGLISH: 'eng',
+    Language.FRENCH: 'fre',
+    Language.UNKNOWN: 'none',
+}
+
+
+def simplelang(lang: Language):
+    return LANGUAGE[lang]
+
+
 ENGLISH = {'eng', 'english', Language.ENGLISH}
 
 
