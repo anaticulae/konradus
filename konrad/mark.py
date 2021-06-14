@@ -15,36 +15,36 @@ import konrad
 
 
 class Mark(enum.Enum):
-    FULLSTOP = enum.auto()  # .
-    COMMA = enum.auto()  # ,
-    COLON = enum.auto()  # :
-    SEMICOLON = enum.auto()  # ;
-    QUESTION_MARK = enum.auto()  #?
-    EXCLAMATION_MARK = enum.auto()  # !
     AND = enum.auto()  # &
     APOSTROPHE = enum.auto()  # '
-    QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
-    QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
-    QUOTATION_MARK_SINGLE_OPEN = enum.auto()
-    QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
-    EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
-    EN_QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
-    EN_QUOTATION_MARK_SINGLE_OPEN = enum.auto()
-    EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
-    HYPHEN = enum.auto()  # - short dash
+    BACKSLASH = enum.auto()  # \
+    BRACKET = enum.auto()  # ()
+    BRACKET_CLOSE = enum.auto()  # )
+    BRACKET_OPEN = enum.auto()  # (
+    COLON = enum.auto()  # :
+    COMMA = enum.auto()  # ,
     DASH = enum.auto()  # -
     DOT = enum.auto()  # . in Fig. or Abb. - but not a FULLSTOP
     DOTS = enum.auto()  # ...
-    SLASH = enum.auto()  # /
-    BACKSLASH = enum.auto()  # \
-    BRACKET = enum.auto()  # ()
-    BRACKET_OPEN = enum.auto()  # (
-    BRACKET_CLOSE = enum.auto()  # )
-    SQUARE_BRACKET = enum.auto()  # [ ]
-    SQUARE_BRACKET_OPEN = enum.auto()  # [
-    SQUARE_BRACKET_CLOSE = enum.auto()  #  ]
+    EN_QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
+    EN_QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
+    EN_QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
+    EN_QUOTATION_MARK_SINGLE_OPEN = enum.auto()
+    EXCLAMATION_MARK = enum.auto()  # !
+    FULLSTOP = enum.auto()  # .
+    HYPHEN = enum.auto()  # - short dash
+    QUESTION_MARK = enum.auto()  #?
     QUOTATION_MARK = enum.auto()  # '' ""
+    QUOTATION_MARK_DOUBLE_CLOSE = enum.auto()
+    QUOTATION_MARK_DOUBLE_OPEN = enum.auto()
     QUOTATION_MARK_SINGLE = enum.auto()  # '' ""
+    QUOTATION_MARK_SINGLE_CLOSE = enum.auto()
+    QUOTATION_MARK_SINGLE_OPEN = enum.auto()
+    SEMICOLON = enum.auto()  # ;
+    SLASH = enum.auto()  # /
+    SQUARE_BRACKET = enum.auto()  # [ ]
+    SQUARE_BRACKET_CLOSE = enum.auto()  #  ]
+    SQUARE_BRACKET_OPEN = enum.auto()  # [
 
     def __str__(self):
         """\
@@ -100,7 +100,7 @@ def matches(token: str, lang=None) -> Mark:
     If `lang` is None, use Language.GERMAN.
 
     >>> matches(':')
-    <Mark.COLON: 3>
+    <Mark.COLON:...>
     >>> matches('”', lang=konrad.ENGLISH)
     <Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE:...>
     """
