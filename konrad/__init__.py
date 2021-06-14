@@ -30,6 +30,7 @@ from konrad.mark import Mark
 from konrad.mark import Marks
 from konrad.mark import mark2str
 from konrad.mark import matches
+from konrad.mark import matchesmore
 from konrad.mark import remove_marks
 from konrad.sign import DOTS
 from konrad.sign import HYPHEN_HALF

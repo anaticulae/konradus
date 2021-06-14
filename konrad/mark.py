@@ -115,6 +115,12 @@ def matches(token: str, lang=None) -> Mark:
     return MATCH[token]
 
 
+def matchesmore(token: str, lang=None) -> Mark:
+    with contextlib.suppress(KeyError):
+        return matches(token, lang=lang)
+    return token
+
+
 def remove_marks(items: list) -> list:
     assert isinstance(items, list), type(items)
     result = [item for item in items if isinstance(item, str)]
