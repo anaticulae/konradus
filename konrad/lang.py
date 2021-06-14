@@ -15,3 +15,16 @@ class Language(enum.Enum):
     ENGLISH = enum.auto()
     FRENCH = enum.auto()
     UNKNOWN = enum.auto()
+
+
+ENGLISH = {'eng', 'english', Language.ENGLISH}
+
+
+def iseng(lang: Language) -> bool:
+    """\
+    >>> iseng(Language.ENGLISH)
+    True
+    """
+    if lang is None:
+        return False
+    return lang in ENGLISH

@@ -26,6 +26,7 @@ import os
 from konrad.abbreviation import ABBREVIATION
 from konrad.abbreviation import ABBREVIATION_LOWER
 from konrad.lang import Language
+from konrad.lang import iseng
 from konrad.mark import Mark
 from konrad.mark import Marks
 from konrad.mark import mark2str
