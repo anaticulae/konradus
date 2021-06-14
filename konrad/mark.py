@@ -44,15 +44,6 @@ class Mark(enum.Enum):
     QUOTATION_MARK = enum.auto()  # '' ""
     QUOTATION_MARK_SINGLE = enum.auto()  # '' ""
 
-    @classmethod
-    def fromstr(cls, item: str, lang: str = None):
-        """Convert str to `Mark`."""
-
-        if lang == konrad.ENGLISH:
-            with contextlib.suppress(KeyError):
-                return MATCH_ENG[item]
-        return MATCH[item]
-
     def __str__(self):
         """\
         >>> str(Mark.DASH)
