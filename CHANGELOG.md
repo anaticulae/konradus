@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.6.1
+
+### Feature
+
+* add method to convert to complex language (a6cd5cf91ddd)
+
 ## v0.6.0
 
 ### Feature
