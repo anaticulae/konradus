@@ -100,7 +100,7 @@ def matches(token: str, lang=None) -> Mark:
     >>> matches('”', lang=konrad.ENGLISH)
     <Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE:...>
     """
-    if lang == konrad.ENGLISH:
+    if konrad.iseng(lang):
         with contextlib.suppress(KeyError):
             return MATCH_ENG[token]
     return MATCH[token]
@@ -131,7 +131,7 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang=konrad.ENGLISH)
     '“'
     """
-    if lang == konrad.ENGLISH:
+    if konrad.iseng(lang):
         with contextlib.suppress(KeyError):
             return REVERSED_ENG[item]
     with contextlib.suppress(KeyError):
