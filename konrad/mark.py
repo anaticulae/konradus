@@ -35,6 +35,8 @@ class Mark(enum.Enum):
     DASH = enum.auto()  # -
     DOT = enum.auto()  # . in Fig. or Abb. - but not a FULLSTOP
     DOTS = enum.auto()  # ...
+    SLASH = enum.auto()  # /
+    BACKSLASH = enum.auto()  # \
     BRACKET = enum.auto()  # ()
     BRACKET_OPEN = enum.auto()  # (
     BRACKET_CLOSE = enum.auto()  # )
@@ -81,6 +83,8 @@ MATCH = {
     ')': Mark.BRACKET_CLOSE,
     '[': Mark.SQUARE_BRACKET_OPEN,
     ']': Mark.SQUARE_BRACKET_CLOSE,
+    '/': Mark.SLASH,
+    '\\': Mark.BACKSLASH,
 }
 MATCH_ENG = {
     '“': Mark.EN_QUOTATION_MARK_DOUBLE_OPEN,
