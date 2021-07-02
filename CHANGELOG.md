@@ -2,6 +2,18 @@
 
 Every noteable change is logged here.
 
+## v0.7.0
+
+### Feature
+
+* add elephant brackets (b6471640b0f3)
+* add ellipsis character (be0e83a69cfa)
+* add guillements (12d16bc82c37)
+
+### Fix
+
+* remove duplicated QUOTATION_MARK_DOUBLE_CLOSE (6f40e679c19c)
+
 ## v0.6.1
 
 ### Feature
