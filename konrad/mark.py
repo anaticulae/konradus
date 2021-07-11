@@ -75,11 +75,11 @@ MATCH = {
     ';': Mark.SEMICOLON,
     '?': Mark.QUESTION_MARK,
     '!': Mark.EXCLAMATION_MARK,
-    "&": Mark.AND,
+    '&': Mark.AND,
     '…': Mark.ELLIPSIS,
     '"': Mark.QUOTATION_MARK,
     "'": Mark.QUOTATION_MARK_SINGLE,
-    "„": Mark.QUOTATION_MARK_DOUBLE_OPEN,
+    '„': Mark.QUOTATION_MARK_DOUBLE_OPEN,
     '“': Mark.QUOTATION_MARK_DOUBLE_CLOSE,
     '‚': Mark.QUOTATION_MARK_SINGLE_OPEN,
     '‘': Mark.QUOTATION_MARK_SINGLE_CLOSE,
@@ -89,7 +89,7 @@ MATCH = {
     '‹': Mark.QUOTATION_GUILLEMENTS_SINGLE_CLOSE,
     '>': Mark.BRACKET_GREATHER,
     '<': Mark.BRACKET_SMALLER,
-    "’": Mark.APOSTROPHE,
+    '’': Mark.APOSTROPHE,
     '-': Mark.HYPHEN,
     '–': Mark.DASH,
     '...': Mark.DOTS,
@@ -107,7 +107,7 @@ MATCH_ENG = {
     '“': Mark.EN_QUOTATION_MARK_DOUBLE_OPEN,
     '”': Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE,
     '‘': Mark.EN_QUOTATION_MARK_SINGLE_OPEN,
-    "’": Mark.EN_QUOTATION_MARK_SINGLE_CLOSE,
+    '’': Mark.EN_QUOTATION_MARK_SINGLE_CLOSE,
 }
 
 
