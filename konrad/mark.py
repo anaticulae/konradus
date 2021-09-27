@@ -38,6 +38,9 @@ class Mark(enum.Enum):
     EXCLAMATION_MARK = enum.auto()  # !
     FULLSTOP = enum.auto()  # .
     HYPHEN = enum.auto()  # - short dash
+    LIST_DOT = enum.auto()
+    LIST_RECTANGLE = enum.auto()
+    LIST_TRIANGLE = enum.auto()
     QUESTION_MARK = enum.auto()  #?
     QUOTATION_GUILLEMENTS_DOUBLE_CLOSE = enum.auto()  # «
     QUOTATION_GUILLEMENTS_DOUBLE_OPEN = enum.auto()  # »
@@ -102,6 +105,9 @@ MATCH = {
     ']': Mark.SQUARE_BRACKET_CLOSE,
     '/': Mark.SLASH,
     '\\': Mark.BACKSLASH,
+    '•': Mark.LIST_DOT,
+    '\uf0a7': Mark.LIST_RECTANGLE,
+    '\u07e7': Mark.LIST_TRIANGLE,
 }
 MATCH_ENG = {
     '“': Mark.EN_QUOTATION_MARK_DOUBLE_OPEN,
