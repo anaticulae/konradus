@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.7.1
+
+### Feature
+
+* add list start dot (235be18e468b)
+
 ## v0.7.0
 
 ### Feature
