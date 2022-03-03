@@ -40,29 +40,22 @@ def test_german_double_quote():
 
 
 REQUIRE_SINGLE_INSIDE = """\
-Bevor die Konzepte der Privatheit und Öffentlichkeit
-systemtheoretisch näher betrachtet werden, soll vorab kurz umrissen
-werden, was darunter verstanden wird. Rössler beschreibt etwas
-Privates folgendermaßen: „‚privat‘ nennen wir einerseits Handlungs-
-und Verhaltensweisen, zum Zweiten ein bestimmtes Wissen und drittens
-Räume“ und weiter: „als privat gilt etwas dann, wenn man selbst
-den Zugang zu diesem „etwas“ kontrollieren kann“. Privatheit
-beinhaltet also den Aspekt der Zugangskontrolle seitens des
+Bevor die Konzepte der Privatheit und Öffentlichkeit \
+systemtheoretisch näher betrachtet werden, soll vorab kurz umrissen \
+werden, was darunter verstanden wird. Rössler beschreibt etwas \
+Privates folgendermaßen: „‚privat‘ nennen wir einerseits Handlungs- \
+und Verhaltensweisen, zum Zweiten ein bestimmtes Wissen und drittens \
+Räume“ und weiter: „als privat gilt etwas dann, wenn man selbst \
+den Zugang zu diesem „etwas“ kontrollieren kann“. Privatheit \
+beinhaltet also den Aspekt der Zugangskontrolle seitens des \
 Individuums.
 """
 
 
 def test_german_double_quote_inside_double():
     splitted = german.sentence_tokenize(REQUIRE_SINGLE_INSIDE)
-    assert len(splitted) == 3
-
-    first, second, third = splitted  # pylint:disable=W0612,W0632
-
-    second_start, second_middle, second_end = second.split(':')  # pylint:disable=W0612
-    second_start = f'{second_start}:'
-
-    no_double = german.word_tokenize(second_start)
+    assert len(splitted) == 5
+    no_double = german.word_tokenize(splitted[1])
     assert german_quotes.no_double_quotes_inside_double(no_double)
-
-    double_inside = german.word_tokenize(second_end)
+    double_inside = german.word_tokenize(splitted[3])
     assert not german_quotes.no_double_quotes_inside_double(double_inside)
