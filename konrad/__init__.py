@@ -44,6 +44,6 @@ GERMAN = Language.GERMAN
 ENGLISH = Language.ENGLISH
 FRENCH = Language.FRENCH
 
-__version__ = '0.7.1'
+__version__ = '0.7.2'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
