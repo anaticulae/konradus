@@ -32,38 +32,57 @@ bspw.                                          beispielsweise
 bzw.                                           beziehungsweise
 ca.                                            circa
 Co.                                            ???
+ders.                                          derselbe
+dies.                                          dieselbe
+d.h.                                           das heißt
 Diss.                                          Dissertation
 Dok.                                           Dokument
+ebd.                                           ebenda
 et.
-et. al.                                        et alii
+et.al.                                         et alii (und andere)
 etc.                                           et cetera
 evtl.                                          eventuell
 f.                                             (die) folgende
-ff.
+ff.                                            fortfolgende Seiten
 Fig.                                           Figure
 Forts.                                         Fortsetzung
 ggf.                                           gegebenenfalls
 H.                                             Heft
+Habil.                                         Habilitationsschrift
 Hrsg.                                          Herausgeber
+hrsg.v.                                        herausgegeben von
+ibd.                                           ibidem
 Jg.                                            Jahrgang
+Kap.                                           Kapitel
 lat.                                           latein
+loc.cit.                                       loco citato (am aufgeführten Ort)
 mind.                                          mindestens
+Nachdr.                                        Nachdruck
+N.N.                                           nomen nominandum
+Nr.                                            Nummer
+No.                                            Number
 o.A.                                           ohne Autor
+o.O                                            ohne Ort
 o.J.                                           ohne Jahrgangsangabe
+o.S.                                           ohne Seitenangabe
 o.V.                                           ohne Verfasser
 o.Ä.                                           ohne Änderung?
-S.                                             Seite
-Sp.                                            Spalte
+pass.                                          passim (da und dort/verstreut)
+S.                                             Seite(n)
 s.                                             siehe
+Sp.                                            Spalte(n)
 Tab.                                           Tabelle
-u.a.                                           unter anderem
+überarb.                                       überarbeitet
+u.a.                                           unter anderem??/und andere
 usw.                                           und so weiter
-vgl.                                           vergleiche
-vs.                                            versus
 Verf.                                          Verfasser
 Verl.                                          Verlag
-Vol.                                           Volume
+vgl.                                           vergleiche
+Vol.                                           Volume (Band)
+vs.                                            versus
 z.B.                                           zum Beispiel
+zit.n.                                         zitiert nach
+zit.nach                                       zitiert nach
 """)
 
 for key, value in list(ABBREVIATION.items()):
