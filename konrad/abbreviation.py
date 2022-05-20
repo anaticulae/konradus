@@ -23,46 +23,46 @@ Ensure that abbreviations with/ and without spaces are available.
 import konrad.utils
 
 ABBREVIATION = konrad.utils.parse_table("""\
+a.a.O.                                         am angeführten Ort
 Abb.                                           Abbildung
+al.
 Aufl.                                          Auflage
 Bd.                                            Band
-Co.                                            ???
-Diss.                                          Dissertation
-Dok.                                           Dokument
-Fig.                                           Figure
-Forts.                                         Fortsetzung
-H.                                             Heft
-Hrsg.                                          Herausgeber
-Jg.                                            Jahrgang
-S.                                             Seite
-Sp.                                            Spalte
-Tab.                                           Tabelle
-Verf.                                          Verfasser
-Verl.                                          Verlag
-Vol.                                           Volume
-a.a.O.                                         am angeführten Ort
-al.
 bspw.                                          beispielsweise
 bzw.                                           beziehungsweise
 ca.                                            circa
+Co.                                            ???
+Diss.                                          Dissertation
+Dok.                                           Dokument
 et.
 et. al.                                        et alii
 etc.                                           et cetera
 evtl.                                          eventuell
 f.                                             (die) folgende
 ff.
+Fig.                                           Figure
+Forts.                                         Fortsetzung
 ggf.                                           gegebenenfalls
+H.                                             Heft
+Hrsg.                                          Herausgeber
+Jg.                                            Jahrgang
 lat.                                           latein
 mind.                                          mindestens
 o.A.                                           ohne Autor
 o.J.                                           ohne Jahrgangsangabe
 o.V.                                           ohne Verfasser
 o.Ä.                                           ohne Änderung?
+S.                                             Seite
+Sp.                                            Spalte
 s.                                             siehe
+Tab.                                           Tabelle
 u.a.                                           unter anderem
 usw.                                           und so weiter
 vgl.                                           vergleiche
 vs.                                            versus
+Verf.                                          Verfasser
+Verl.                                          Verlag
+Vol.                                           Volume
 z.B.                                           zum Beispiel
 """)
 
