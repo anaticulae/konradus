@@ -20,48 +20,51 @@ Ensure that abbreviations with/ and without spaces are available.
 >>> assert ABBREVIATION['a.a.O.'] == ABBREVIATION['a. a. O.']
 """
 
-ABBREVIATION = {
-    'Abb.': 'Abbildung',
-    'Aufl.': 'Auflage',
-    'Bd.': 'Band',
-    'Co.': '???',
-    'Diss.': 'Dissertation',
-    'Dok.': 'Dokument',  # ?
-    'Fig.': 'Figure',
-    'Forts.': 'Fortsetzung',
-    'H.': 'Heft',
-    'Hrsg.': 'Herausgeber',
-    'Jg.': 'Jahrgang',
-    'S.': 'Seite',
-    'Sp.': 'Spalte',
-    'Tab.': 'Tabelle',
-    'Verf.': 'Verfasser',
-    'Verl.': 'Verlag',
-    'Vol.': 'Volume',
-    'a.a.O.': 'am angeführten Ort',
-    'al.': '',
-    'bspw.': 'beispielsweise',
-    'bzw.': 'beziehungsweise',
-    'ca.': 'circa',
-    'et. al.': 'et alii',  # TODO: CHECK DOTS
-    'et.': '',
-    'etc.': 'et cetera',
-    'evtl.': 'eventuell',
-    'f.': '(die) folgende',
-    'ff.': '',
-    'ggf.': 'gegebenenfalls',
-    'lat.': 'latein',
-    'mind.': 'mindestens',
-    'o.J.': 'ohne Jahrgangsangabe',
-    'o.V.': 'ohne Verfasser',
-    'o.Ä.': 'ohne Änderung?',
-    's.': 'siehe',
-    'u.a.': 'unter anderem',
-    'usw.': 'und so weiter',
-    'vgl.': 'vergleiche',
-    'vs.': 'versus',
-    'z.B.': 'zum Beispiel',
-}
+import konrad.utils
+
+ABBREVIATION = konrad.utils.parse_table("""\
+Abb.                                           Abbildung
+Aufl.                                          Auflage
+Bd.                                            Band
+Co.                                            ???
+Diss.                                          Dissertation
+Dok.                                           Dokument
+Fig.                                           Figure
+Forts.                                         Fortsetzung
+H.                                             Heft
+Hrsg.                                          Herausgeber
+Jg.                                            Jahrgang
+S.                                             Seite
+Sp.                                            Spalte
+Tab.                                           Tabelle
+Verf.                                          Verfasser
+Verl.                                          Verlag
+Vol.                                           Volume
+a.a.O.                                         am angeführten Ort
+al.
+bspw.                                          beispielsweise
+bzw.                                           beziehungsweise
+ca.                                            circa
+et.
+et. al.                                        et alii
+etc.                                           et cetera
+evtl.                                          eventuell
+f.                                             (die) folgende
+ff.
+ggf.                                           gegebenenfalls
+lat.                                           latein
+mind.                                          mindestens
+o.A.                                           ohne Autor
+o.J.                                           ohne Jahrgangsangabe
+o.V.                                           ohne Verfasser
+o.Ä.                                           ohne Änderung?
+s.                                             siehe
+u.a.                                           unter anderem
+usw.                                           und so weiter
+vgl.                                           vergleiche
+vs.                                            versus
+z.B.                                           zum Beispiel
+""")
 
 for key, value in list(ABBREVIATION.items()):
     # insert spaces into abbreviation keys
