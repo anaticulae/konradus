@@ -23,8 +23,8 @@ valid chunks.
 
 import os
 
-from konrad.abbreviation import ABBREVIATION
-from konrad.abbreviation import ABBREVIATION_LOWER
+from konrad.abbr import ABBREVIATION
+from konrad.abbr import ABBREVIATION_LOWER
 from konrad.lang import Language
 from konrad.lang import complexlang
 from konrad.lang import iseng
