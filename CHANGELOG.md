@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.8.0
+
+### Feature
+
+* make list of marks convert able (c39c6cf1caa2)
+* extend list (118981d62da3)
+
 ## v0.7.2
 
 ### Documentation
