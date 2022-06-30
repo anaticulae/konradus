@@ -11,6 +11,8 @@ import contextlib
 import enum
 import typing
 
+import utila
+
 import konrad
 
 
@@ -157,7 +159,11 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     'Helm'
     >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang=konrad.ENGLISH)
     '“'
+    >>> mark2str('Hello this is helmut'.split())
+    ['Hello', 'this', 'is', 'helmut']
     """
+    if utila.iterable(item):
+        return [mark2str(it) for it in item]
     if konrad.iseng(lang):
         with contextlib.suppress(KeyError):
             return REVERSED_ENG[item]
