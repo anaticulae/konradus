@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.8.1
+
+### Feature
+
+* add percent sign (35ef7ecd10bb)
+
 ## v0.8.0
 
 ### Feature
