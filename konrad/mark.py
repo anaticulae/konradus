@@ -59,6 +59,7 @@ class Mark(enum.Enum):
     SQUARE_BRACKET = enum.auto()  # [ ]
     SQUARE_BRACKET_CLOSE = enum.auto()  #  ]
     SQUARE_BRACKET_OPEN = enum.auto()  # [
+    PERCENT = enum.auto()  # %
 
     def __str__(self):
         """\
@@ -94,6 +95,7 @@ MATCH = {
     '‹': Mark.QUOTATION_GUILLEMENTS_SINGLE_CLOSE,
     '>': Mark.BRACKET_GREATHER,
     '<': Mark.BRACKET_SMALLER,
+    '%': Mark.PERCENT,
     '’': Mark.APOSTROPHE,
     '-': Mark.HYPHEN,
     '–': Mark.DASH,
