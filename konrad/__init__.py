@@ -37,6 +37,15 @@ from konrad.mark import mark2str
 from konrad.mark import matches
 from konrad.mark import matchesmore
 from konrad.mark import remove_special
+from konrad.sentence import SentenceType
+from konrad.sentence import is_formula
+from konrad.sentence import is_list
+from konrad.sentence import is_listitem
+from konrad.sentence import is_listsepa
+from konrad.sentence import is_quote
+from konrad.sentence import list_split
+from konrad.sentence import nosentence
+from konrad.sentence import sentence_type
 from konrad.sign import DOTS
 from konrad.sign import HYPHEN_HALF
 from konrad.sign import HYPHEN_QUARTER
