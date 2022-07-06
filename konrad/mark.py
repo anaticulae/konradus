@@ -144,8 +144,12 @@ def matchesmore(token: str, lang=None) -> Mark:
 
 
 def remove_marks(items: list) -> list:
-    assert isinstance(items, list), type(items)
-    result = [item for item in items if isinstance(item, str)]
+    """\
+    >>> remove_marks((konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, 'Hallo'))
+    ['Hallo']
+    """
+    assert utila.iterable(items), type(items)
+    result = [item for item in items if not isspecial(item)]
     return result
 
 
