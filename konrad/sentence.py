@@ -54,7 +54,7 @@ SENTENCE = utila.compiles(r"""
     (
         %s
     )
-    \@\$\#\:
+    \@\$\#\:?
     $
 """ % '|'.join(re.escape(item.name) for item in SentenceType))
 

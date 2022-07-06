@@ -190,6 +190,8 @@ def isspecial(item) -> bool:
     True
     >>> isspecial('#$@LIST_ITEM@$#:')
     True
+    >>> isspecial('#$@FORMULA@$#')
+    True
     """
     if isinstance(item, konrad.Mark):
         return True
