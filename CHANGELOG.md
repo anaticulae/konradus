@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.10.1
+
+### Fix
+
+* adjust lang converter (b1e192c54551)
+
 ## v0.10.0
 
 ### Feature
