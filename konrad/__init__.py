@@ -36,7 +36,7 @@ from konrad.mark import isspecial
 from konrad.mark import mark2str
 from konrad.mark import matches
 from konrad.mark import matchesmore
-from konrad.mark import remove_marks
+from konrad.mark import remove_special
 from konrad.sign import DOTS
 from konrad.sign import HYPHEN_HALF
 from konrad.sign import HYPHEN_QUARTER
@@ -49,3 +49,6 @@ FRENCH = Language.FRENCH
 __version__ = '0.8.1'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+# TODO: REMOVE LATER
+remove_marks = remove_special

@@ -143,9 +143,9 @@ def matchesmore(token: str, lang=None) -> Mark:
     return token
 
 
-def remove_marks(items: list) -> list:
+def remove_special(items: list) -> list:
     """\
-    >>> remove_marks((konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, 'Hallo'))
+    >>> remove_special((konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, 'Hallo'))
     ['Hallo']
     """
     assert utila.iterable(items), type(items)
