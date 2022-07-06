@@ -35,9 +35,17 @@ def complexlang(lang: Language) -> str:
     """\
     >>> complexlang(Language.FRENCH)
     'french'
+    >>> complexlang('fre')
+    'french'
+    >>> complexlang('german')
+    'german'
     """
     if isinstance(lang, str):
-        return lang
+        if len(lang) != 3:
+            return lang
+        for key, value in LANGUAGE.items():
+            if lang in value:
+                return key.name.lower()
     return LANGUAGE[lang][1]
 
 
