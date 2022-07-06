@@ -14,6 +14,7 @@ import typing
 import utila
 
 import konrad
+import konrad.sentence
 
 
 class Mark(enum.Enum):
@@ -187,10 +188,14 @@ def isspecial(item) -> bool:
     True
     >>> isspecial('{{hn:232:nh}}')
     True
+    >>> isspecial('#$@LIST_ITEM@$#:')
+    True
     """
     if isinstance(item, konrad.Mark):
         return True
     if HIGHNOTE.match(item):
+        return True
+    if konrad.sentence.SENTENCE.match(item):
         return True
     return False
 
