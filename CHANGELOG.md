@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.9.0
+
+### Feature
+
+* extend special remover (6ee864df4f89)
+* add method to determine if token is special (ba5f3c27a182)
+
 ## v0.8.1
 
 ### Feature
