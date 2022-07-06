@@ -2,6 +2,15 @@
 
 Every noteable change is logged here.
 
+## v0.10.0
+
+### Feature
+
+* cache special (59fab8cb2a24)
+* make special checker more robust (e4d63ea8e796)
+* extend special token checker (e1ffddde9900)
+* move sentence checker from texmex (fc2b19e147d9)
+
 ## v0.9.0
 
 ### Feature
