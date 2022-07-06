@@ -180,6 +180,7 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     return item
 
 
+@utila.cacheme
 def isspecial(item) -> bool:
     """\
     >>> isspecial('Mut')
