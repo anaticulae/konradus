@@ -29,8 +29,10 @@ from konrad.lang import Language
 from konrad.lang import complexlang
 from konrad.lang import iseng
 from konrad.lang import simplelang
+from konrad.mark import HIGHNOTE
 from konrad.mark import Mark
 from konrad.mark import Marks
+from konrad.mark import isspecial
 from konrad.mark import mark2str
 from konrad.mark import matches
 from konrad.mark import matchesmore

@@ -172,3 +172,22 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     with contextlib.suppress(KeyError):
         return REVERSED[item]
     return item
+
+
+def isspecial(item) -> bool:
+    """\
+    >>> isspecial('Mut')
+    False
+    >>> import konrad; isspecial(konrad.Mark.PERCENT)
+    True
+    >>> isspecial('{{hn:232:nh}}')
+    True
+    """
+    if isinstance(item, konrad.Mark):
+        return True
+    if HIGHNOTE.match(item):
+        return True
+    return False
+
+
+HIGHNOTE = utila.compiles(r'\{\{hn\:(\d{1,4})\:nh\}\}')
