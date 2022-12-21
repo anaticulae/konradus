@@ -2,6 +2,15 @@
 
 Every noteable change is logged here.
 
+## v0.10.3 (2022-12-21)
+
+### Chore
+
+* use quick install (43905765efb3)
+* upgrade requirements.txt (f1757213122c)
+* upgrade pipeline (3d0b27a001de)
+* upgrade Jenkinsfile (33e6f97994ef)
+
 ## v0.10.1
 
 ### Fix
