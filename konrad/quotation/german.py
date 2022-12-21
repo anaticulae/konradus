@@ -30,7 +30,7 @@ def no_double_quotes_inside_double(token: list) -> bool:
     # ensure alernating
     if not open_close:
         return True
-    for current, after in zip(open_close[0:-1], open_close[1:]):
+    for current, after in zip(open_close[0:-1], open_close[1:]):  # pylint:disable=consider-using-any-or-all
         if current == after:
             # require single marks inside
             # wrong: „zu diesem „etwas“ kontrollieren kann“.

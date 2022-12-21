@@ -9,7 +9,6 @@
 
 import contextlib
 import enum
-import typing
 
 import utila
 
@@ -73,7 +72,7 @@ class Mark(enum.Enum):
         return mark2str(self, lang=lang)
 
 
-Marks = typing.List[Mark]
+Marks = list[Mark]
 
 MATCH = {
     '.': Mark.FULLSTOP,

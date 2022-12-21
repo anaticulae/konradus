@@ -14,7 +14,7 @@ import utila
 
 def parse_table(raw: str) -> dict:
     # TODO: MOVE TO UTILA
-    result = dict()
+    result = {}
     for line in raw.strip().splitlines():
         splitted = re.split(r'\s{10,}', line)
         key = splitted[0]
