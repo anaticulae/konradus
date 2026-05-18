@@ -1,6 +1,600 @@
 # CHANGELOG
 
 
+## v1.0.1 (2026-05-18)
+
+### Chores
+
+- **init**: Use dynamic version
+  ([`004c652`](https://github.com/anaticulae/konradus/commit/004c652202abbf11fc9f1be2034184be764628fe))
+
+
 ## v1.0.0 (2026-05-18)
+
+### Chores
+
+- **github**: Add .github
+  ([`20b1b32`](https://github.com/anaticulae/konradus/commit/20b1b32369184fc34aba0243bff404fecdb4a6ff))
+
+- **project**: Use modern approach
+  ([`8b22cf8`](https://github.com/anaticulae/konradus/commit/8b22cf883ea86b2c12f41378407c51c0b930c93e))
+
+
+## v0.10.3 (2022-12-21)
+
+### Chores
+
+- **ci**: Upgrade Jenkinsfile
+  ([`33e6f97`](https://github.com/anaticulae/konradus/commit/33e6f97994ef922312d921f322730ad52b55fe9d))
+
+- **Jenkins**: Upgrade pipeline
+  ([`3d0b27a`](https://github.com/anaticulae/konradus/commit/3d0b27a001def275ae5c5edd0b3614261f306f47))
+
+- **requirements**: Upgrade requirements.txt
+  ([`f175721`](https://github.com/anaticulae/konradus/commit/f1757213122cd1666127aa358811884a4d107d81))
+
+- **setup**: Use quick install
+  ([`4390576`](https://github.com/anaticulae/konradus/commit/43905765efb3ad0f104036b546ba5c176ad22213))
+
+### Code Style
+
+- **changelog**: Adjust to automated release pattern
+  ([`c5cbe82`](https://github.com/anaticulae/konradus/commit/c5cbe8217693804e47838b4915293beeeb48d430))
+
+- **config**: Add missing copyright header
+  ([`c72375f`](https://github.com/anaticulae/konradus/commit/c72375f30b2672f2aed0dc388c690abc88cc272c))
+
+### Refactoring
+
+- **replace**: Automated replacement
+  ([`49b59c3`](https://github.com/anaticulae/konradus/commit/49b59c308a4d98b946f502291251f610af7d11bb))
+
+
+## v0.10.2 (2022-09-25)
+
+### Chores
+
+- **ci**: Add Jenkinsfile
+  ([`131816c`](https://github.com/anaticulae/konradus/commit/131816c0c1e0f9cff51a2d79fa15e8551fe1aa9b))
+
+- **requirements**: Upgrade requirements.txt
+  ([`3e2d375`](https://github.com/anaticulae/konradus/commit/3e2d375be6592c447c85b849c539060feb6dd87e))
+
+
+## v0.10.1 (2022-07-06)
+
+### Bug Fixes
+
+- **lang**: Adjust lang converter
+  ([`b1e192c`](https://github.com/anaticulae/konradus/commit/b1e192c54551d9ab0a17bb3a87c30452d01c9b81))
+
+
+## v0.10.0 (2022-07-06)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`84c872b`](https://github.com/anaticulae/konradus/commit/84c872b1e91a81356c6049b540985c6076259c5f))
+
+### Features
+
+- **mark**: Cache special
+  ([`59fab8c`](https://github.com/anaticulae/konradus/commit/59fab8cb2a242f5660aa04a955ded2557f6af899))
+
+- **mark**: Make special checker more robust
+  ([`e4d63ea`](https://github.com/anaticulae/konradus/commit/e4d63ea8e796d1f7a0a99d8026062aa71ba1eeaa))
+
+- **sentence**: Move sentence checker from texmex
+  ([`fc2b19e`](https://github.com/anaticulae/konradus/commit/fc2b19e147d9e33ececa9fa2aa7ff234b92b1cb3))
+
+- **special**: Extend special token checker
+  ([`e1ffddd`](https://github.com/anaticulae/konradus/commit/e1ffddde9900ab68c63bc48374ba14e63a198f55))
+
+
+## v0.9.0 (2022-07-06)
+
+### Chores
+
+- **requirements**: Add missing utila
+  ([`a70227a`](https://github.com/anaticulae/konradus/commit/a70227a1c161c59d67e802d2eba0e5bf6061b419))
+
+### Features
+
+- **mark**: Add method to determine if token is special
+  ([`ba5f3c2`](https://github.com/anaticulae/konradus/commit/ba5f3c27a182434bb08c10aba705fa026dea07b1))
+
+- **mark**: Extend special remover
+  ([`6ee864d`](https://github.com/anaticulae/konradus/commit/6ee864df4f89810910101c50027f85f413cd783e))
+
+### Refactoring
+
+- **mark**: Rename method
+  ([`1b73fe4`](https://github.com/anaticulae/konradus/commit/1b73fe4f6691f739a9eb06bd43e7919d6934248e))
+
+
+## v0.8.1 (2022-07-06)
+
+### Features
+
+- **mark**: Add percent sign
+  ([`35ef7ec`](https://github.com/anaticulae/konradus/commit/35ef7ecd10bbea43428c9066765c31beb35bfa68))
+
+
+## v0.8.0 (2022-06-30)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`04fda12`](https://github.com/anaticulae/konradus/commit/04fda12fe61ce4b7447de5f3fd4cc5cc07db1e88))
+
+### Code Style
+
+- **abbr**: Sort alphabetically
+  ([`2e07fbc`](https://github.com/anaticulae/konradus/commit/2e07fbc24f35ec6fe4d5d1fc538fdff2df78a222))
+
+- **requirements**: Add missing copyright header
+  ([`25a61df`](https://github.com/anaticulae/konradus/commit/25a61df49d238574343f6a7ea07dade8f7851440))
+
+### Features
+
+- **abbr**: Extend list
+  ([`118981d`](https://github.com/anaticulae/konradus/commit/118981d62da3637a84fd0432057606399d4ebcb4))
+
+- **mark**: Make list of marks convert able
+  ([`c39c6cf`](https://github.com/anaticulae/konradus/commit/c39c6cf1caa23e849520f7ce2f435f41e07681ac))
+
+### Refactoring
+
+- **abbreviation**: Ease extending
+  ([`df1fa1c`](https://github.com/anaticulae/konradus/commit/df1fa1c506fd2b75e010f161cd995ca00ffa6fe9))
+
+- **rename**: Shorten naming
+  ([`5f26604`](https://github.com/anaticulae/konradus/commit/5f26604199488045a74b03b3982b3c9357eec571))
+
+
+## v0.7.2 (2022-05-20)
+
+### Chores
+
+- **project**: Move project config
+  ([`69b840e`](https://github.com/anaticulae/konradus/commit/69b840e268e1630b2095ae217596d084ab4022c4))
+
+- **requirements**: Upgrade requirements.txt
+  ([`d6ee4bc`](https://github.com/anaticulae/konradus/commit/d6ee4bc3066758ff051a066410319dd497c1b82f))
+
+- **requirements**: Upgrade requirements.txt
+  ([`9582491`](https://github.com/anaticulae/konradus/commit/958249111b3044a201a6cec90464f656810a8c40))
+
+### Code Style
+
+- **docs**: Adjust modules path
+  ([`0d7b891`](https://github.com/anaticulae/konradus/commit/0d7b8911b505c48217db653557079a5c112c433e))
+
+### Documentation
+
+- **copyright**: Happy New Year!
+  ([`a0fc155`](https://github.com/anaticulae/konradus/commit/a0fc155e409dfcb1f8c1f0f95af418c555e4ed87))
+
+- **index**: Adjust modules path
+  ([`49bec86`](https://github.com/anaticulae/konradus/commit/49bec86607a624c5ee37dad59855daff67fbe348))
+
+### Testing
+
+- **adjust**: Adjust test after upgrading german
+  ([`97b4416`](https://github.com/anaticulae/konradus/commit/97b4416a2f61064a2c13fc733098b69947717409))
+
+
+## v0.7.1 (2021-09-27)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`40bdd90`](https://github.com/anaticulae/konradus/commit/40bdd90c71b12eca3885542ff09130eb006f9a6e))
+
+### Code Style
+
+- **mark**: Adjust string definition
+  ([`629d147`](https://github.com/anaticulae/konradus/commit/629d147ba9bdc90576862f8811ae84e839de1f67))
+
+### Features
+
+- **mark**: Add list start dot
+  ([`235be18`](https://github.com/anaticulae/konradus/commit/235be18e468b65a0f0a116c8ce80bfd044f86c3d))
+
+
+## v0.7.0 (2021-07-02)
+
+### Bug Fixes
+
+- **mark**: Remove duplicated QUOTATION_MARK_DOUBLE_CLOSE
+  ([`6f40e67`](https://github.com/anaticulae/konradus/commit/6f40e679c19c8fbf0eb0d4d77bf2a4c94cb3c06a))
+
+### Features
+
+- **mark**: Add elephant brackets
+  ([`b647164`](https://github.com/anaticulae/konradus/commit/b6471640b0f363bc19716e051620db187f4801f0))
+
+- **mark**: Add ellipsis character
+  ([`be0e83a`](https://github.com/anaticulae/konradus/commit/be0e83a69cfaf528f713f4c29981bc583c29f5a9))
+
+- **mark**: Add guillements
+  ([`12d16bc`](https://github.com/anaticulae/konradus/commit/12d16bc82c37124b1e8662837fe7601cb8699955))
+
+
+## v0.6.1 (2021-06-14)
+
+### Features
+
+- **lang**: Add method to convert to complex language
+  ([`a6cd5cf`](https://github.com/anaticulae/konradus/commit/a6cd5cf91ddd1dfb8ad12faeaf9f859528c31314))
+
+
+## v0.6.0 (2021-06-14)
+
+### Features
+
+- **lang**: Add method to check English language
+  ([`f23f245`](https://github.com/anaticulae/konradus/commit/f23f24591305c77c6e11a34a94b5811bf92f0df3))
+
+- **lang**: Add method to convert Language to str
+  ([`e87d634`](https://github.com/anaticulae/konradus/commit/e87d634c1679326a689cfe08e46bb6b718251d0f))
+
+- **mark**: Add slash and backslash
+  ([`ba45b34`](https://github.com/anaticulae/konradus/commit/ba45b344f38e0134efee88e0ba0c2c14ea0f9e54))
+
+- **mark**: If not matches return content
+  ([`4016c48`](https://github.com/anaticulae/konradus/commit/4016c48440bd18c376c8c3a901dc82c0e8a99b2b))
+
+### Refactoring
+
+- **mark**: Improve language selection
+  ([`8b7f857`](https://github.com/anaticulae/konradus/commit/8b7f857b1638b931886932d92707456aada8c706))
+
+- **mark**: Sort alphabetically
+  ([`bef9519`](https://github.com/anaticulae/konradus/commit/bef95199e354f3587e0b7b0f56a4c14bb3fe83bf))
+
+
+## v0.5.1 (2021-06-13)
+
+### Bug Fixes
+
+- **mark**: Replace with language enum
+  ([`b33feb6`](https://github.com/anaticulae/konradus/commit/b33feb6aa04ab9322f65e5860750f316077826f2))
+
+
+## v0.5.0 (2021-06-12)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`75537a0`](https://github.com/anaticulae/konradus/commit/75537a0e696a7b86ce964101bc0f2160fa285a88))
+
+- **setup**: Cleanup setup file
+  ([`26ba224`](https://github.com/anaticulae/konradus/commit/26ba224a275fe22b8e1ac2c145e9ac54aa3fbf2b))
+
+### Features
+
+- **mark**: Make mark language dependent
+  ([`5a42397`](https://github.com/anaticulae/konradus/commit/5a4239780039ca3c69ce9bd463f632c5a6c29edc))
+
+
+## v0.4.1 (2021-06-12)
+
+### Features
+
+- **mark**: Add enum to str converter
+  ([`13ba5b8`](https://github.com/anaticulae/konradus/commit/13ba5b8cfd9ce2b7870982d1d76607e7d3ff366a))
+
+
+## v0.4.0 (2021-03-12)
+
+### Bug Fixes
+
+- **abbr**: Add missing dot
+  ([`5325f7d`](https://github.com/anaticulae/konradus/commit/5325f7de1b8e461ea16976e05181c8fba3596292))
+
+### Features
+
+- **abbreviation**: Enable spaces inside abbreviation keys
+  ([`8076238`](https://github.com/anaticulae/konradus/commit/80762387ecf1e1ae31127638a8ed781d1f68bded))
+
+
+## v0.3.1 (2021-03-09)
+
+### Bug Fixes
+
+- **german**: Change to new API
+  ([`2085fba`](https://github.com/anaticulae/konradus/commit/2085fba449f2ac905c5418aa6a085eceb3891257))
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`885ee73`](https://github.com/anaticulae/konradus/commit/885ee73d7b57fd2c25657ad9e44a4b23ffa21e61))
+
+### Documentation
+
+- **copyright**: Happy New Year!
+  ([`7e54745`](https://github.com/anaticulae/konradus/commit/7e54745d7e99388e0e18d9ebba7378848266f7b3))
+
+### Testing
+
+- **fix**: Adjust to new double colon behavior
+  ([`76b7804`](https://github.com/anaticulae/konradus/commit/76b7804c7eac14da8f3984009ae316b31cbb3918))
+
+
+## v0.3.0 (2020-11-30)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`b62f2b5`](https://github.com/anaticulae/konradus/commit/b62f2b5a2dd31d53f2caac2be40bdd8b03b81c6b))
+
+### Features
+
+- **abb**: Extend abbreviation list
+  ([`1664c87`](https://github.com/anaticulae/konradus/commit/1664c870e1f3adcddacb79efe6c0537bbe3fd288))
+
+- **mark**: Add DOT type
+  ([`f8ce15b`](https://github.com/anaticulae/konradus/commit/f8ce15bbde073bda4b9d268d90364ebe56223891))
+
+
+## v0.2.24 (2020-10-08)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`eedb1d0`](https://github.com/anaticulae/konradus/commit/eedb1d0cfefcd396e288ffbbbe1a9226b7e1613d))
+
+
+## v0.2.23 (2020-09-26)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`2d10d77`](https://github.com/anaticulae/konradus/commit/2d10d77d224cd51714015471c04fe0f595b01325))
+
+
+## v0.2.22 (2020-07-27)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`7269938`](https://github.com/anaticulae/konradus/commit/7269938853dc709f75583326a640b53fd22fb978))
+
+
+## v0.2.21 (2020-06-18)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`92bb9fa`](https://github.com/anaticulae/konradus/commit/92bb9fafe3c3db24a5a611304fbeafd993477b1c))
+
+
+## v0.2.20 (2020-06-18)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`9a78dc2`](https://github.com/anaticulae/konradus/commit/9a78dc2b72aa533f606c5c62aa99520433a1715f))
+
+
+## v0.2.19 (2020-06-17)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`aef85ab`](https://github.com/anaticulae/konradus/commit/aef85ab40a8ba9eeefafa3b998a5733658668202))
+
+
+## v0.2.18 (2020-06-17)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`cb0844b`](https://github.com/anaticulae/konradus/commit/cb0844b3ae82937939376e25105b4cf6398a68da))
+
+
+## v0.2.17 (2020-06-11)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`349b057`](https://github.com/anaticulae/konradus/commit/349b0574c9d4c1620e9e23dc828f8bd1aadddb39))
+
+
+## v0.2.16 (2020-06-06)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`4c61e2c`](https://github.com/anaticulae/konradus/commit/4c61e2c13b800030c62e2c8497d29aebc5365a21))
+
+### Code Style
+
+- **imports**: Organize imports
+  ([`d7f9374`](https://github.com/anaticulae/konradus/commit/d7f9374928afc5e6f11bf3e485f5b798e6f0cdd0))
+
+### Features
+
+- **mark**: Add method to convert mark to string
+  ([`9ec340d`](https://github.com/anaticulae/konradus/commit/9ec340df800f043d3a45b675c1f1cc92e6440392))
+
+
+## v0.2.15 (2020-06-01)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`6926c1b`](https://github.com/anaticulae/konradus/commit/6926c1b0623ac840467c3db8aa7766f302b8638b))
+
+
+## v0.2.14 (2020-05-29)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`ceb47fe`](https://github.com/anaticulae/konradus/commit/ceb47fe15910b48b4db47cafcd06584ede3499f0))
+
+
+## v0.2.13 (2020-05-29)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`e2fdb81`](https://github.com/anaticulae/konradus/commit/e2fdb810edf5438e264f9177d1d3803a17f764fb))
+
+
+## v0.2.12 (2020-05-28)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`0044964`](https://github.com/anaticulae/konradus/commit/0044964b6b4bbbb78a5b90af95169cc3e5bdad4c))
+
+
+## v0.2.11 (2020-05-26)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`75d81e8`](https://github.com/anaticulae/konradus/commit/75d81e868b58169586fe96d0c4ab57df02d84520))
+
+
+## v0.2.10 (2020-05-23)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`f09f114`](https://github.com/anaticulae/konradus/commit/f09f1148c6961f957deb10989704d937a6147f7a))
+
+
+## v0.2.9 (2020-05-23)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`9dcebcb`](https://github.com/anaticulae/konradus/commit/9dcebcb3c9575f2c6d1d6ead72fff6dfb615edba))
+
+
+## v0.2.8 (2020-05-18)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`5512b57`](https://github.com/anaticulae/konradus/commit/5512b57ab6d6f31484e2fe30f635b271c75531e2))
+
+
+## v0.2.7 (2020-05-17)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`83f1298`](https://github.com/anaticulae/konradus/commit/83f12982bacda4b6809352ee47fdad5e250fa2c2))
+
+
+## v0.2.6 (2020-05-17)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`3d5791b`](https://github.com/anaticulae/konradus/commit/3d5791b7f331d426c477aada2d350be4109784cc))
+
+
+## v0.2.5 (2020-05-17)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`9136a49`](https://github.com/anaticulae/konradus/commit/9136a490e589d5e7b2e4817273aaabaec6fe26ee))
+
+
+## v0.2.4 (2020-05-16)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`7330be5`](https://github.com/anaticulae/konradus/commit/7330be5064b53a6b5a853058b7c159f4d2dd7c2f))
+
+### Features
+
+- **abbreviation**: Extend abbreviation table
+  ([`3af519d`](https://github.com/anaticulae/konradus/commit/3af519d513891d5dc73a318dcc476f0c485d92c1))
+
+- **mark**: Add method to remove marks out of token list
+  ([`9a16581`](https://github.com/anaticulae/konradus/commit/9a16581eda9a8825c9db75a8da367af0b4c434ad))
+
+
+## v0.2.3 (2020-05-07)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`53fad5b`](https://github.com/anaticulae/konradus/commit/53fad5bb448a59570f2af81bda1f78294d1a3e34))
+
+
+## v0.2.2 (2020-05-07)
+
+### Chores
+
+- **dev**: Add `german` package to dev-requirements
+  ([`9d1b9f4`](https://github.com/anaticulae/konradus/commit/9d1b9f422d62694c008dc239cead2b0dc2f64722))
+
+### Features
+
+- **lang**: Add language constants to public API
+  ([`f05a6e3`](https://github.com/anaticulae/konradus/commit/f05a6e30250eb18d95dc9d992816a66dfa4d9f88))
+
+### Testing
+
+- **quotes**: Move tests from decider package
+  ([`dbe4510`](https://github.com/anaticulae/konradus/commit/dbe45107badce724fd39a68a0d5567426ca98c19))
+
+
+## v0.2.1 (2020-04-30)
+
+### Bug Fixes
+
+- **setup**: Add missing package definition
+  ([`b71955b`](https://github.com/anaticulae/konradus/commit/b71955b8387991c446c0f479044e4a55da7f0e1a))
+
+
+## v0.2.0 (2020-04-29)
+
+### Documentation
+
+- **general**: Add introduction and tell what the difference to `german` are
+  ([`5527091`](https://github.com/anaticulae/konradus/commit/5527091d03ab1a9db67c5ce80547c1eec2510e75))
+
+### Features
+
+- **move**: Move `lang` from `german` and `mark` from `words`
+  ([`d3cf703`](https://github.com/anaticulae/konradus/commit/d3cf70306f566e4e2052b0edfc049b5adf5e3837))
+
+- **quotation**: Move quotation verifier from words project
+  ([`2e5cc71`](https://github.com/anaticulae/konradus/commit/2e5cc717f3c1ba950958e81f476bd12fa3c48385))
+
+
+## v0.1.1 (2020-04-22)
+
+### Features
+
+- **sign**: Move HYPHEN and DOTS
+  ([`239ef51`](https://github.com/anaticulae/konradus/commit/239ef513271a99114bc14b96019f688e6f3f79bf))
+
+
+## v0.1.0 (2020-04-20)
+
+### Code Style
+
+- **header**: Add conftest copyright header
+  ([`a4e6762`](https://github.com/anaticulae/konradus/commit/a4e67623fb9f972e6cb14207f2f478b644b16007))
+
+### Features
+
+- **move**: Move abbreviations and sign to package
+  ([`9dc1473`](https://github.com/anaticulae/konradus/commit/9dc1473fef1f57e13960d5db1eda0001b189aff7))
+
+
+## v0.0.0 (2020-02-25)
 
 - Initial Release
