@@ -7,5 +7,21 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-# require to split sentences
-german==1.27.1
+import re
+
+import utilo
+
+
+def parse_table(raw: str) -> dict:
+    # TODO: MOVE TO UTILA
+    result = {}
+    for line in raw.strip().splitlines():
+        splitted = re.split(r'\s{10,}', line)
+        key = splitted[0]
+        if len(splitted) == 1:
+            result[key] = 'NO VALUE'
+            utilo.debug(f'EMPTY VALUE: {line}')
+        else:
+            value = splitted[1]
+            result[key] = value
+    return result

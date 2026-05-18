@@ -7,12 +7,12 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import konrad.mark
+import konradus.mark
 
-DOUBLE_OPEN = konrad.mark.Mark.QUOTATION_MARK_DOUBLE_OPEN
-DOUBLE_CLOSE = konrad.mark.Mark.QUOTATION_MARK_DOUBLE_CLOSE
-SINGLE_OPEN = konrad.mark.Mark.QUOTATION_MARK_SINGLE_OPEN
-SINGLE_CLOSE = konrad.mark.Mark.QUOTATION_MARK_SINGLE_CLOSE
+DOUBLE_OPEN = konradus.mark.Mark.QUOTATION_MARK_DOUBLE_OPEN
+DOUBLE_CLOSE = konradus.mark.Mark.QUOTATION_MARK_DOUBLE_CLOSE
+SINGLE_OPEN = konradus.mark.Mark.QUOTATION_MARK_SINGLE_OPEN
+SINGLE_CLOSE = konradus.mark.Mark.QUOTATION_MARK_SINGLE_CLOSE
 
 
 def double_quotation_closed(token: list) -> bool:

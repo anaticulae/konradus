@@ -10,10 +10,10 @@
 import contextlib
 import enum
 
-import utila
+import utilo
 
-import konrad
-import konrad.sentence
+import konradus
+import konradus.sentence
 
 
 class Mark(enum.Enum):
@@ -68,7 +68,7 @@ class Mark(enum.Enum):
         >>> str(Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE)
         '”'
         """
-        lang = konrad.ENGLISH if str(self.name).startswith('EN_') else None
+        lang = konradus.ENGLISH if str(self.name).startswith('EN_') else None
         return mark2str(self, lang=lang)
 
 
@@ -129,10 +129,10 @@ def matches(token: str, lang=None) -> Mark:
 
     >>> matches(':')
     <Mark.COLON:...>
-    >>> matches('”', lang=konrad.ENGLISH)
+    >>> matches('”', lang=konradus.ENGLISH)
     <Mark.EN_QUOTATION_MARK_DOUBLE_CLOSE:...>
     """
-    if konrad.iseng(lang):
+    if konradus.iseng(lang):
         with contextlib.suppress(KeyError):
             return MATCH_ENG[token]
     return MATCH[token]
@@ -146,10 +146,10 @@ def matchesmore(token: str, lang=None) -> Mark:
 
 def remove_special(items: list) -> list:
     """\
-    >>> remove_special((konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, 'Hallo'))
+    >>> remove_special((konradus.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, 'Hallo'))
     ['Hallo']
     """
-    assert utila.iterable(items), type(items)
+    assert utilo.iterable(items), type(items)
     result = [item for item in items if not isspecial(item)]
     return result
 
@@ -160,18 +160,18 @@ REVERSED_ENG = {value: key for key, value in MATCH_ENG.items()}
 
 def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     """\
-    >>> mark2str(konrad.Mark.COMMA)
+    >>> mark2str(konradus.Mark.COMMA)
     ','
     >>> mark2str('Helm')
     'Helm'
-    >>> mark2str(konrad.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang=konrad.ENGLISH)
+    >>> mark2str(konradus.Mark.EN_QUOTATION_MARK_DOUBLE_OPEN, lang=konradus.ENGLISH)
     '“'
     >>> mark2str('Hello this is helmut'.split())
     ['Hello', 'this', 'is', 'helmut']
     """
-    if utila.iterable(item):
+    if utilo.iterable(item):
         return [mark2str(it) for it in item]
-    if konrad.iseng(lang):
+    if konradus.iseng(lang):
         with contextlib.suppress(KeyError):
             return REVERSED_ENG[item]
     with contextlib.suppress(KeyError):
@@ -179,12 +179,12 @@ def mark2str(item: Mark, lang=None) -> str:  # pylint:disable=W0613
     return item
 
 
-@utila.cacheme
+@utilo.cacheme
 def isspecial(item) -> bool:
     """\
     >>> isspecial('Mut')
     False
-    >>> import konrad; isspecial(konrad.Mark.PERCENT)
+    >>> import konradus; isspecial(konradus.Mark.PERCENT)
     True
     >>> isspecial('{{hn:232:nh}}')
     True
@@ -193,13 +193,13 @@ def isspecial(item) -> bool:
     >>> isspecial('#$@FORMULA@$#')
     True
     """
-    if isinstance(item, konrad.Mark):
+    if isinstance(item, konradus.Mark):
         return True
     if HIGHNOTE.match(item):
         return True
-    if konrad.sentence.SENTENCE.match(item):
+    if konradus.sentence.SENTENCE.match(item):
         return True
     return False
 
 
-HIGHNOTE = utila.compiles(r'\{\{hn\:(\d{1,4})\:nh\}\}')
+HIGHNOTE = utilo.compiles(r'\{\{hn\:(\d{1,4})\:nh\}\}')

@@ -23,33 +23,33 @@ valid chunks.
 
 import os
 
-from konrad.abbr import ABBREVIATION
-from konrad.abbr import ABBREVIATION_LOWER
-from konrad.lang import Language
-from konrad.lang import complexlang
-from konrad.lang import iseng
-from konrad.lang import simplelang
-from konrad.mark import HIGHNOTE
-from konrad.mark import Mark
-from konrad.mark import Marks
-from konrad.mark import isspecial
-from konrad.mark import mark2str
-from konrad.mark import matches
-from konrad.mark import matchesmore
-from konrad.mark import remove_special
-from konrad.sentence import SentenceType
-from konrad.sentence import is_formula
-from konrad.sentence import is_list
-from konrad.sentence import is_listitem
-from konrad.sentence import is_listsepa
-from konrad.sentence import is_quote
-from konrad.sentence import list_split
-from konrad.sentence import nosentence
-from konrad.sentence import sentence_type
-from konrad.sign import DOTS
-from konrad.sign import HYPHEN_HALF
-from konrad.sign import HYPHEN_QUARTER
-from konrad.sign import SIGN
+from konradus.abbr import ABBREVIATION
+from konradus.abbr import ABBREVIATION_LOWER
+from konradus.lang import Language
+from konradus.lang import complexlang
+from konradus.lang import iseng
+from konradus.lang import simplelang
+from konradus.mark import HIGHNOTE
+from konradus.mark import Mark
+from konradus.mark import Marks
+from konradus.mark import isspecial
+from konradus.mark import mark2str
+from konradus.mark import matches
+from konradus.mark import matchesmore
+from konradus.mark import remove_special
+from konradus.sentence import SentenceType
+from konradus.sentence import is_formula
+from konradus.sentence import is_list
+from konradus.sentence import is_listitem
+from konradus.sentence import is_listsepa
+from konradus.sentence import is_quote
+from konradus.sentence import list_split
+from konradus.sentence import nosentence
+from konradus.sentence import sentence_type
+from konradus.sign import DOTS
+from konradus.sign import HYPHEN_HALF
+from konradus.sign import HYPHEN_QUARTER
+from konradus.sign import SIGN
 
 GERMAN = Language.GERMAN
 ENGLISH = Language.ENGLISH

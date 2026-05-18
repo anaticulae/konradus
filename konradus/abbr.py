@@ -20,9 +20,9 @@ Ensure that abbreviations with/ and without spaces are available.
 >>> assert ABBREVIATION['a.a.O.'] == ABBREVIATION['a. a. O.']
 """
 
-import konrad.utils
+import konradus.utils
 
-ABBREVIATION = konrad.utils.parse_table("""\
+ABBREVIATION = konradus.utils.parse_table("""\
 a.a.O.                                         am angeführten Ort
 Abb.                                           Abbildung
 al.
